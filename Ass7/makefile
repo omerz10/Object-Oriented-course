@@ -1,0 +1,15 @@
+#200876548
+#zuckero
+compile: bin
+	javac -d bin -cp biuoop-1.4.jar src/*/*.java
+run:
+	java -cp biuoop-1.4.jar:bin:resources game/Ass7Game 
+jar:
+	mkdir uber-jar
+	unzip biuoop-1.4.jar -d uber-jar
+	rm -rf uber-jar/META-INF
+	cp -r bin/* uber-jar/
+	jar cfm space-invaders.jar Manifest.mf -C uber-jar . -C resources .
+	rm -rf uber-jar
+bin:
+	mkdir bin

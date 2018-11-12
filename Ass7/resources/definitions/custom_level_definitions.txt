@@ -1,0 +1,51 @@
+
+# Level 1
+# Image Background and images for blocks
+
+START_LEVEL
+level_name:Frog
+ball_velocities:15,400 -15,400 0,400 45,400 -45,400
+background:image(background_images/frog.jpg)
+paddle_speed:650
+paddle_width:220
+block_definitions:definitions/tringle_block_definitions.txt
+blocks_start_x:50
+blocks_start_y:200
+row_height:25
+num_blocks:26
+START_BLOCKS
+bgro----bgro----bgro
+-
+-
+----bgro----bgro
+
+END_BLOCKS
+END_LEVEL
+
+
+
+# Level 2
+# Image Background and images for blocks
+
+START_LEVEL
+level_name:Magen David
+ball_velocities:45,350 -45,350 0,350
+background:image(background_images/airplains.jpg)
+paddle_speed:650
+paddle_width:220
+block_definitions:definitions/david_block_definitions.txt
+blocks_start_x:50
+blocks_start_y:100
+row_height:25
+num_blocks:26
+START_BLOCKS
+---------bb
+--------bbbb-----
+--bbbbbbbbbbbbbbbbb
+---bbbbbbbbbbbbbb
+----bbbbbbbbbbbb
+--bbbbbbbbbbbbbbbbb
+--------bbbb
+---------bb
+END_BLOCKS
+END_LEVEL
